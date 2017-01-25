@@ -1,17 +1,16 @@
 {
   "name": "uconnect",
-  "version": "1.0.0",
-  "description": "uconnect pc software",
-  "main": "index.js",
-  "scripts": {
-    "start": "electron main.js",
-    "build": "electron-packager --platform=win32 --arch=x64 ./ uConnect"
-  },
-  "author": "John-Robert Densmore",
+  "version": "1.1.0",
+  "main": "main.js",
+  "author": "noppolis_studios",
   "license": "ISC",
   "devDependencies": {
     "asar": "^0.13.0",
-    "electron-packager": "^8.5.0",
+    "electron-packager": "^8.5.1",
     "electron-prebuilt": "^1.4.13"
+  },
+
+  "scripts": {
+    "start": "electron main.js"
   }
 }

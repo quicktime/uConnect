@@ -1,22 +1,81 @@
 <html>
 <link rel="stylesheet" type="text/css" href="style/uConnect.css">
 <title>uConnect</title>
+
 <body>
 
+    <button type="button" , id="min-btn"></button>
+    <!--  <button type="button", id="max-btn"></button> -->
+    <button type="button" , id="close-btn"></button>
 
-  <button type="button", id="min-btn"></button>
-<!--  <button type="button", id="max-btn"></button> -->
-  <button type="button", id="close-btn"></button>
+    <div class="container">
+        <div id="sidepanel">
+            <h101>uConnect Desktop</h101>
+            <h3>Welcome,</h3>
+            <h2>$username</h2>
+            <script>require('./index.js')</script>
+        </div>
+    </div>
 
 
-<div class="container">
-  <div id="sidepanel">
-    <h3>Welcome,</h3>
-    <h2>$username</h2>
-    <script class="config">require('./index.js')</script>
-  </div>
-</div>
+    <div id="rightpanel">
+
+      <script>
+          require('./index2.js')
+      </script>
+
+        <h1>Profile</h1>
+        <div id="profile-drop">
+          <select name="profile", id="dropdown">
+            <option value="Profile1">Profile</option>
+            </option>
+          </select>
+        </div>
+
+        <button class="create-profile">Create Profile</button>
+        <button class="load-profile">Load Profile</button>
+
+        <h4>Music Player</h4>
+        <div id="music-drop">
+            <select name="MusicPlayer", id="dropdown">
+            <option value="mplayer-spotify">Spotify</option>
+            <option value="mplayer-winamp">Winamp</option>
+            <option value="mplayer-vlc">Windows Media Player</option>
+            <option value="mplayer-foobar">Foobar</option>
+          </select>
+        </div>
+
+        <h5>Video Player</h5>
+        <div id="video-drop">
+            <select name="VideoPlayer", id="dropdown">
+            <option value="vplayer-youtube">YouTube</option>
+            <option value="vplayer-mpchc">MPC-HC</option>
+            <option value="vplayer-vlc">VLC</option>
+            <option value="vplayer-potplayer">Pot Player</option>
+          </select>
+        </div>
+
+        <h6>Applications</h6>
+        <div id="app-drop">
+            <select name="Applications", id="dropdown">
+            <option value="app-powerpoint">PowerPoint</option>
+            <option value="app-camera">Camera</option>
+            <option value="app-lock">Lock</option>
+          </select>
+        </div>
+
+      <form method="post" action="" id="profile">
+
+<script>require('./index3.js')</script>
+    <p><button class="test-button" type="submit"> Save as TXT</button></p>
+
+    <button class="save-profile" onclick="WriteToFile()">Save Profile</button>
+      <button class="reset-profile">Reset Profile</button>
+      </form>
+
+    </div>
 
 
- </body>
+</body>
+
 </html>

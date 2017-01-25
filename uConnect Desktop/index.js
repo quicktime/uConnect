@@ -1,12 +1,14 @@
-
 const remote = require('electron').remote
-const main = remote.require('./main.js') 
+const main = remote.require('./main.js')
+
+var app = require('electron').remote;
+var dialog = app.dialog;
 
 
 let config = document.createElement('button')
 config.textContent = 'Config'
 config.addEventListener('click', () => {
-	main.openWindow()
+    main.openWindow()
 }, false)
 config.innerHTML = '<img src="style/imgs/config2.png" />';
 config.style.height = "25px";
@@ -24,7 +26,7 @@ document.body.appendChild(config)
 let help = document.createElement('button')
 help.textContent = 'Help'
 help.addEventListener('click', () => {
-	main.openWindow2()
+    main.openWindow2()
 }, false)
 help.innerHTML = '<img src="style/imgs/help.png" />';
 help.style.height = "25px";
@@ -39,10 +41,10 @@ help.style.backgroundColor = "transparent";
 document.body.appendChild(help)
 
 
-  document.getElementById("min-btn").addEventListener("click", function (e) {
-       var window = remote.getCurrentWindow();
-       window.minimize();
-  });
+document.getElementById("min-btn").addEventListener("click", function(e) {
+    var window = remote.getCurrentWindow();
+    window.minimize();
+});
 
 /*  document.getElementById("max-btn").addEventListener("click", function (e) {
        var window = remote.getCurrentWindow();
@@ -54,7 +56,7 @@ document.body.appendChild(help)
   });
 */
 
-  document.getElementById("close-btn").addEventListener("click", function (e) {
-       var window = remote.getCurrentWindow();
-       window.close();
-  });
+document.getElementById("close-btn").addEventListener("click", function(e) {
+    var window = remote.getCurrentWindow();
+    window.close();
+});

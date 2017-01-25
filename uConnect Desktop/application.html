@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style/uConnect.css">
+<title>Application Config</title>
+
+<body>
+
+    <button type="button" , id="min-btn"></button>
+    <!--  <button type="button", id="max-btn"></button> -->
+    <button type="button" , id="close-btn"></button>
+
+    <h1>Application Config</h1>
+
+    <script>
+        require('./application.js')
+    </script>
+
+    <h8>Single Input</h8>
+    <div id="input1-drop">
+        <select name="Application-Input1", id="dropdown">
+          <option value="application-none">Not Active</option>
+        <option value="application-next">Next Slide</option>
+        <option value="application-previous">Previous Slide</option>
+        <option value="application-photo">Capture Photo</option>
+        <option value="application-video">Capture Video</option>
+        <option value="application-lock">Lock Computer</option>
+      </select>
+    </div>
+
+    <h9>Double Input</h9>
+    <div id="input2-drop">
+        <select name="Application-Input2", id="dropdown">
+          <option value="application-none">Not Active</option>
+          <option value="application-next">Next Slide</option>
+          <option value="application-previous">Previous Slide</option>
+          <option value="application-photo">Capture Photo</option>
+          <option value="application-video">Capture Video</option>
+          <option value="application-lock">Lock Computer</option>
+      </select>
+    </div>
+
+    <h10>Slider Input</h10>
+    <div id="input3-drop">
+        <select name="Application-Input3", id="dropdown">
+          <option value="application-none">Not Active</option>
+        <option value="mplayer-slide-change">Change Slide</option>
+      </select>
+    </div>
+
+    <button class="save-application-settings">Save Settings</button>
+
+</body>
+
+</html>

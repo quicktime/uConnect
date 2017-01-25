@@ -1,49 +1,115 @@
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 html, body {
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  animation: fadein 0.5s;
-  -webkit-user-select: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    animation: fadein 0.5s;
+    -webkit-user-select: none;
 }
 
-h3 {
+h101 {
   position: absolute;
-  left: 60px;
-  top: 30px;
+  padding: 10px;
+  font-size: 25px;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+}
+
+h1 {
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
 }
 
 h2 {
+    position: absolute;
+    left: 60px;
+    top: 90px;
+}
+
+h3 {
+    position: absolute;
+    left: 60px;
+    top: 70px;
+}
+
+h4 {
+  top: 75px;
   position: absolute;
-  left: 60px;
-  top: 50px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h5 {
+  top: 150px;
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h6 {
+  top: 215px;
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h7 {
+  top: 340px;
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h8 {
+  top: 60px;
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h9 {
+  top: 140px;
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h10 {
+  top: 220px;
+  position: absolute;
+  padding: 10px;
+  font-size: 25px;
 }
 
 #close-btn {
-  background-image: url(imgs/close.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: transparent;
-  height: 20px;
-  width: 20px;
-  border: none;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+    background-image: url(imgs/close.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
 }
 
 #close-btn:hover {
-  background-color: #fc0000;
+    background-color: #fc0000;
 }
+
 
 /*
 #max-btn {
@@ -65,32 +131,235 @@ h2 {
 */
 
 #min-btn {
-  background-image: url(imgs/minimize.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: transparent;
-  height: 20px;
-  width: 20px;
-  border: none;
-  position: absolute;
-  top: 5px;
-  right: 35px;
+    background-image: url(imgs/minimize.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    z-index: 5;
 }
 
 #min-btn:hover {
-  background-color: #d8d4d8;
+    background-color: #d8d4d8;
 }
 
 .container {
-  padding: 0px;
+    padding: 0px;
+}
+
+.container-help {
+    padding: 20px;
 }
 
 #sidepanel {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #03af1d;
+    padding: 0px;
+    z-index: -1;
+    left: 0;
+    border-right: 1px solid black;
+}
+
+#rightpanel {
+    position: absolute;
+    width: 74.5%;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 0px;
+    right: 0;
+    top: 0;
+}
+
+select#dropdown {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 200px;
+}
+
+#profile-drop {
+  top: 60px;
+  left: 10px;
   position: absolute;
-  width: 25%;
-  height: 100%;
-  background-color: #03af1d;
-  padding: 0px;
-  z-index: -1;
-  border-right: 1px solid black;
+}
+
+#music-drop {
+  top: 150px;
+  left: 10px;
+  position: absolute;
+}
+
+#video-drop {
+  top:  235px;
+  left: 10px;
+  position: absolute;
+}
+
+#app-drop {
+  top: 315px;
+  left: 10px;
+  position: absolute;
+}
+
+#input1-drop {
+  top: 100px;
+  left: 10px;
+  position: absolute;
+}
+
+#input2-drop {
+  top: 180px;
+  left: 10px;
+  position: absolute;
+}
+
+#input3-drop {
+  top: 260px;
+  left: 10px;
+  position: absolute;
+}
+
+.create-profile {
+  background-color: #e7e7e7; color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 58px;
+  left: 220px;
+  width: 100px;
+  height: 25px;
+}
+
+.load-profile {
+  background-color: #e7e7e7; color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 58px;
+  left: 324px;
+  width: 100px;
+  height: 25px;
+}
+
+.save-profile {
+  background-color: #e7e7e7;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 370px;
+  left: 10px;
+  width: 100px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.save-application-settings {
+  background-color: #e7e7e7;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 320px;
+  left: 10px;
+  width: 120px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.save-music-settings {
+  background-color: #e7e7e7;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 320px;
+  left: 10px;
+  width: 120px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.save-video-settings {
+  background-color: #e7e7e7;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 320px;
+  left: 10px;
+  width: 120px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.reset-profile {
+  background-color: #e7e7e7;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 370px;
+  left: 120px;
+  width: 100px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.test-button   {
+  background-color: #e7e7e7;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 420px;
+  left: 10px;
+  width: 100px;
+  height: 35px;
+  font-weight: bold;
 }

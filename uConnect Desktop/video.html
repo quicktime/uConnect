@@ -1,0 +1,47 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style/uConnect.css">
+<title>Video Config</title>
+
+<body>
+
+    <button type="button" , id="min-btn"></button>
+    <!--  <button type="button", id="max-btn"></button> -->
+    <button type="button" , id="close-btn"></button>
+
+    <h1>Video Config</h1>
+
+    <script>
+        require('./video.js')
+    </script>
+
+    <h8>Single Input</h8>
+    <div id="input1-drop">
+        <select name="VideoPlayer-Input1" , id="dropdown">
+        <option value="vplayer-none">Not Active</option>
+        <option value="vplayer-playpause">Play / Pause</option>
+        <option value="vplayer-skip">Skip</option>
+      </select>
+    </div>
+
+    <h9>Double Input</h9>
+    <div id="input2-drop">
+        <select name="VideoPlayer-Input2" , id="dropdown">
+          <option value="vplayer-none">Not Active</option>
+        <option value="vplayer-playpause">Play / Pause</option>
+        <option value="vplayer-skip">Skip</option>
+      </select>
+    </div>
+
+    <h10>Slider Input</h10>
+    <div id="input3-drop">
+        <select name="VideoPlayer-Input3" , id="dropdown">
+          <option value="vplayer-none">Not Active</option>
+        <option value="vplayer-volume">Volume</option>
+      </select>
+    </div>
+
+    <button class="save-video-settings">Save Settings</button>
+
+</body>
+
+</html>

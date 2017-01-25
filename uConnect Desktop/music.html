@@ -1,0 +1,48 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style/uConnect.css">
+<title>Music Config</title>
+
+<body>
+
+    <button type="button" , id="min-btn"></button>
+    <!--  <button type="button", id="max-btn"></button> -->
+    <button type="button" , id="close-btn"></button>
+
+    <h1>Music Config</h1>
+
+    <script>
+        require('./music.js')
+    </script>
+
+
+    <h8>Single Input</h8>
+    <div id="input1-drop">
+        <select name="MusicPlayer-Input1", id="dropdown">
+          <option value="vplayer-none">Not Active</option>
+        <option value="mplayer-playpause">Play / Pause</option>
+        <option value="mplayer-skip">Skip</option>
+      </select>
+    </div>
+
+    <h9>Double Input</h9>
+    <div id="input2-drop">
+        <select name="MusicPlayer-Input2", id="dropdown">
+          <option value="vplayer-none">Not Active</option>
+        <option value="mplayer-playpause">Play / Pause</option>
+        <option value="mplayer-skip">Skip</option>
+      </select>
+    </div>
+
+    <h10>Slider Input</h10>
+    <div id="input3-drop">
+        <select name="MusicPlayer-Input3", id="dropdown">
+          <option value="vplayer-none">Not Active</option>
+        <option value="mplayer-volume">Volume</option>
+      </select>
+    </div>
+
+  <button class="save-music-settings">Save Settings</button>
+
+</body>
+
+</html>
