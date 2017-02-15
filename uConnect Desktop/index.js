@@ -4,6 +4,53 @@ const main = remote.require('./main.js')
 var app = require('electron').remote;
 var dialog = app.dialog;
 
+var SerialPort = require('serialport');
+var port = new SerialPort('COM3');
+
+port.on('open', function() {
+    port.write('main screen turn on', function(err) {
+        if (err) {
+            return console.log('Error on write: ', err.message);
+        }
+        console.log('message written');
+    });
+});
+
+port.on('data', function(data) {
+    console.log('Data: ' + data);
+});
+
+// open errors will be emitted as an error event
+port.on('error', function(err) {
+    console.log('Error: ', err.message);
+})
+
+var exec require('child_process').exec;
+var winLockCommand = 'rund1132.exe user32.dll, LockWorkStation';
+var winShutdownCommand = 'shutdown -s';
+var openFireFox = 'start firefox';
+var closeFireFox = 'Taskkill /IM firefox.exe';
+
+while read - r line < /COM3; do
+if ("$line" == "One" * ) {
+    exec(winLockCommand);
+} else if ("$line" == "Two" * ) {
+    exec(winShutDownCommand);
+
+} else if ("$line" == "Two" * ) {
+    exec(winShutDownCommand);
+
+  /* Redacted spotify due to issues see spotify.js */
+
+} else if ("$line" == "Four" * ) {
+    exec(openFireFox);
+} else if ("$line" == "Five" * ) {
+    exec(closeFireFox);
+}
+
+/* redacted Spotify due to issues see spotify.js */
+
+
 
 let config = document.createElement('button')
 config.textContent = 'Config'
